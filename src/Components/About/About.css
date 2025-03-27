@@ -1,0 +1,38 @@
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 85vh;
+}
+.about-title{
+    width: 100%;
+    text-align: center;
+}
+
+#about-title{
+    font-size: 3rem;
+    color: #000 !important;
+}
+
+#hr-about{
+    width: 15%;
+    margin: 0 auto;
+    border: 1px solid #000;
+}
+.container-about{
+    margin: 2rem 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about-text-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.about-text{
+    width: 60%;
+    margin-right: 8rem;
+}
