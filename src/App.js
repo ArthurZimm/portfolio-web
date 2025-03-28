@@ -1,4 +1,5 @@
 import About from './Components/About';
+import Experience from './Components/Experience';
 import Footer from './Components/Footer';
 import Header from './Components/Header';
 import Language from './Components/Language';
@@ -9,6 +10,7 @@ function App() {
     <>
       <Header />
       <About />
+      <Experience />
       <Language />
       <Projects />
       <Footer />

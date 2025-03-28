@@ -24,7 +24,6 @@ header {
     overflow: hidden;
 }
 
-/* Efeito sutil no fundo */
 header::before {
     content: "";
     position: absolute;
@@ -96,7 +95,6 @@ h2 {
     filter: drop-shadow(0 0 7px rgba(0, 188, 212, 0.8));
 }
 
-/* Imagem de perfil */
 .img-profile {
     width: 280px;
     height: 280px;
@@ -112,7 +110,6 @@ h2 {
     box-shadow: 0px 0px 20px rgba(0, 188, 212, 0.5);
 }
 
-/* Responsividade */
 @media (max-width: 900px) {
     .container {
         flex-direction: column;
