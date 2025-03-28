@@ -1,38 +1,119 @@
-section{
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 85vh;
+    align-items: center;
+    min-height: 85vh;
+    background: linear-gradient(135deg, #0a0a0a, #111, #191919);
+    color: #d1d1d1;
+    text-align: center;
+    padding: 80px 5%;
+    position: relative;
+    overflow: hidden;
 }
-.about-title{
+
+/* Adicionando um detalhe futurista no fundo */
+section::before {
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(0, 188, 212, 0.4), transparent);
+    top: 10%;
+    left: 5%;
+}
+
+.about-title {
     width: 100%;
     text-align: center;
+    margin-bottom: 20px;
 }
 
-#about-title{
-    font-size: 3rem;
-    color: #000 !important;
+#about-title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #00bcd4, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 3px;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
-#hr-about{
+#hr-about {
     width: 15%;
-    margin: 0 auto;
-    border: 1px solid #000;
+    margin: 10px auto;
+    border: 1px solid rgba(0, 188, 212, 0.5);
+    animation: fadeIn 2s ease-in-out;
 }
-.container-about{
-    margin: 2rem 25rem;
+
+.container-about {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 1100px;
+    padding: 30px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: 0px 0px 20px rgba(0, 188, 212, 0.2);
+    animation: fadeIn 2.5s ease-in-out;
 }
-.about-text-img{
+
+/* Melhor distribuição do conteúdo */
+.about-text-img {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    gap: 60px;
+    margin-top: 30px;
+    width: 100%;
 }
-.about-text{
-    width: 60%;
-    margin-right: 8rem;
+
+/* Ajuste no texto */
+.about-text {
+    width: 50%;
+    font-size: 1.3rem;
+    opacity: 0.9;
+    line-height: 1.6;
+    text-align: left;
+}
+
+/* Ajuste na imagem */
+.img-about {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px rgba(0, 188, 212, 0.4);
+    transition: transform 0.3s ease-in-out;
+}
+
+.img-about:hover {
+    transform: scale(1.08);
+}
+
+/* Responsividade aprimorada */
+@media (max-width: 900px) {
+    .about-text-img {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .about-text {
+        width: 90%;
+        text-align: center;
+    }
+
+    .img-about {
+        width: 220px;
+        height: 220px;
+    }
 }

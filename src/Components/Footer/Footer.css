@@ -1,28 +1,53 @@
+/* Estilos do Footer */
 .footer {
     background-color: #1a1a1a;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 40px 20px;
+    position: relative;
     bottom: 0;
+    box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.3);
 }
 
+/* Conteúdo do Footer */
 .footer-content {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+/* Links sociais */
 .social-links {
-    margin-top: 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
+/* Estilo dos links sociais */
 .social-links a {
     color: white;
-    margin: 0 10px;
-    font-size: 1.5rem;
-    transition: color 0.3s;
+    font-size: 2rem;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
+/* Efeito hover nos links sociais */
 .social-links a:hover {
     color: #007bff;
+    transform: scale(1.1);
+}
+
+/* Copyright */
+.footer .copyright {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #bbb;
+    letter-spacing: 0.5px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .social-links {
+        gap: 15px;
+    }
 }

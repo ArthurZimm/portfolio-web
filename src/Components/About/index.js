@@ -2,6 +2,7 @@ import './About.css'
 import RiveAbout from '../RiveAbout'
 
 const About = () => {
+    const year = new Date().getFullYear() - 2002;
     return (
         <section>
             <div className='about-title'>
@@ -12,18 +13,11 @@ const About = () => {
                 <div className='about-content'>
                     <div className='about-text-img'>
                         <div className='about-text'>
-                            <p>Olá, eu sou Arthur Zimmermann de Oliveira, tenho 22 anos e sou desenvolvedor FullStack.
-                                Atualmente estou cursando o último ano de Engenharia de Computação na Universidade Federal de Itajubá (UNIFEI).
-                                Atualmente estou cursando o último ano de Engenharia de Computação na Universidade Federal de Itajubá (UNIFEI).
-                                Atualmente estou cursando o último ano de Engenharia de Computação na Universidade Federal de Itajubá (UNIFEI).
-                                Atualmente estou cursando o último ano de Engenharia de Computação na Universidade Federal de Itajubá (UNIFEI).
-                                Atualmente estou cursando o último ano de Engenharia de Computação na Universidade Federal de Itajubá (UNIFEI).
-                                Atualmente estou cursando o último ano de Engenharia de Computação na Universidade Federal de Itajubá (UNIFEI).
-                                Atualmente estou cursando o último ano de Engenharia de Computação na Universidade Federal de Itajubá (UNIFEI).
-                                Atualmente estou cursando o último ano de Engenharia de Computação na Universidade Federal de Itajubá (UNIFEI).
-                                Atualmente estou cursando o último ano de Engenharia de Computação na Universidade Federal de Itajubá (UNIFEI).
-                                Sou apaixonado por tecnologia e sempre busco aprender coisas novas. Tenho experiência com desenvolvimento de software,
-                                principalmente em aplicações web. Atualmente estou estudando React e NodeJS, e pretendo me aprofundar mais em desenvolvimento mobile.</p>
+                            <p>Olá, eu sou <span>Arthur Zimmermann de Oliveira</span>, tenho {year} anos e trabalho como Desenvolvedor.
+                                Sou Bacharel em Sistemas de Informação e atualmente estou cursando pós graduação de <strong>Arquitetura de Sistemas .NET com Azure</strong> na
+                                <strong> FIAP</strong>.
+                                <br />
+                            </p>
                         </div>
                         <RiveAbout />
                     </div>
