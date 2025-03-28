@@ -2,7 +2,7 @@
 
 Bem-vindo ao repositório do meu portfólio web pessoal. Este projeto foi desenvolvido para apresentar meus trabalhos, habilidades e experiências na área de desenvolvimento web.
 
-Acesse o portfólio ao vivo em:(Em Construção)
+Acesse o portfólio em: https://arthurzimmermann.vercel.app/
 
 ## Tecnologias Utilizadas
 
